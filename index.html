@@ -10,7 +10,11 @@
         </style>
         <style>
         body {
-            background-image: url(http://www.kinyu-z.net/data/wallpapers/225/1491356.jpg)
+            background-image: url(http://www.kinyu-z.net/data/wallpapers/225/1491356.jpg);
+            object-fit: cover;    
+            background-repeat: no-repeat;
+            background-size: cover;
+
         }
         </style>
    
@@ -20,8 +24,8 @@
 
     <div class="container">
         
-        <h1 align="right" style="color: rgb(6, 248, 236)">Daftar Makanan</h1>
-        <input id="input-makanan" placeholder="Masukkan Nama"/>
+        <h1 align="right" style="color: rgb(6, 248, 236)">Ketikkan Sesuatu Hari Ini</h1>
+        <input id="input-sesuatu" placeholder="Masukkan Nama"/>
         <button id="button">Tambah</button>
         <br /> <br />
         <ul id="list" class="list-group">
@@ -39,7 +43,7 @@
         }
         
 
-        const inputDOM = document.getElementById('input-makanan');
+        const inputDOM = document.getElementById('input-sesuatu');
 
         // TODO
         // buatlah variabel DOM untuk mengakses button
