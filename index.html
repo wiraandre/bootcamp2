@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <style>
         .list-group-item:hover{
-            background-color: cyan;
+            background-color: black;
         }
         </style>
         <style>
@@ -23,6 +23,7 @@
             position: fixed;
         }
         </style>
+        
    
 </head>
 <body>
@@ -30,9 +31,9 @@
 
     <div class="container">
         
-        <h1 align="right" style="color: rgb(0, 0, 0)">Ketikkan Sesuatu Hari Ini</h1>
+        <h1 align="right" style="color: rgb(6, 248, 236)">Ketikkan Sesuatu Hari Ini</h1>
         <input id="input-sesuatu" placeholder="Ketikkan sesuatu"/>
-        <button id="button">Tambah</button>
+        <button id="button" class="btn btn-success">Tambah</button>
         <br /> <br />
         <ul id="list" class="list-group">
         </ul>
@@ -78,7 +79,7 @@
             for(var i = 0; i < data.length; i++){
                 // html = html + "<li>" + data[i] + "</li>";
                 html = html + `<li class="list-group-item" >${data[i]}
-                <button align="right" onClick="remove(${i})">hapus</button>
+                <button class="float-right btn btn-danger" onClick="remove(${i})">hapus</button>
                 </li>`;
             }
 
